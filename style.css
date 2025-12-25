@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url('font/Norse-Bold.woff2') format('woff2'),
+        url('font/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body{
+    line-height: 1.5;
+    background-color: black;
+}
+
+p{
+    text-wrap: pretty;
+}
+
+.container {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    height: 100vh;
+    
+}
+
+.image {
+    background: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    margin-top: 8em;
+    height: 5rem;
+}
+
+.logo-container .logo-text{
+
+    color: white;
+    font-family: "Norse",sans-serif;
+    font-size: 3rem;
+}
+
+.logo-container .logo{
+    height: 4.2rem;
+    width: auto;
+}
+
+.content {
+    background-color: white;
+    width: 60%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    padding: 1em 0;
+}
+
+.intro{
+    padding: 1em 2em;
+    font-weight: bold;
+}
+
+.form-data{
+    box-shadow: 0 -0.3px 0.3px rgba(190, 187, 187, 0.4),  
+                0 5px 5px rgba(190, 187, 187, 0.4); 
+    margin: 1em 0;
+    padding: 0.8em 2em;
+}
+
+.data-container{
+    display: flex;
+    gap: 50px;
+}
+
+.data-container div {
+    padding: 0.5em;
+}
+
+label{
+    display: block;
+    font-size: 0.5rem;
+}
+
+input {
+    display: inline-block;
+    width: 10rem;
+    height: 1.5rem;
+    border: 1px solid #E5E7EB;
+    font-size: 0.5rem;
+}
+
+button {
+    padding: 0.5em 1em;
+    margin: 1em 2em;
+    color: white;
+    background-color: #596D48;
+    text-decoration: none;
+    border: none;
+}
+
+.footer {
+    margin: 1em 2em;
+}
+
+.footer a{
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+input:focus {
+    border-color: blue;
+    outline: none;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: row;      
+        width: 100%;              
+        height: 100vh;         
+    }
+
+    html, body {
+        overflow: hidden;         
+    }
+}
