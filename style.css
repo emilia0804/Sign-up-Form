@@ -29,7 +29,8 @@ p{
     display: flex;
     width: 70%;
     margin: auto;
-    height: 100vh;
+    height: auto;
+    position: relative;
     
 }
 
@@ -38,6 +39,17 @@ p{
     background-size: cover;
     background-position: center;
     width: 40%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.photo-credit{
+    color: white;
+    text-align: center;
+    
 }
 
 .logo-container{
@@ -63,9 +75,10 @@ p{
 .content {
     background-color: white;
     width: 60%;
-    /* display: flex;
+    flex: 1.2;
+    display: flex;
     flex-direction: column;
-    justify-content: center; */
+    justify-content: center;
     padding: 1em 0;
 }
 
@@ -83,7 +96,8 @@ p{
 
 .data-container{
     display: flex;
-    gap: 50px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .data-container div {
@@ -131,14 +145,14 @@ input:invalid {
     border-color: red;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .container {
         flex-direction: row;      
         width: 100%;              
-        height: 100vh;         
+        height: auto;         
     }
 
     html, body {
-        overflow: hidden;         
+        overflow: scroll;         
     }
-}
+} */
